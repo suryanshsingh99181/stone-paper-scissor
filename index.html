@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stone Paper Scissor </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75dcc36077.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-screen bg-slate-800 border-2 rounded-2xl text-center">
+    <h1 class="text-center text-5xl text-white font-bold">Stone Paper Scissor</h1>
+    <button id="refresh-btn" class="m-8 p-2 rounded-lg font-bold text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  " onclick="scoreClear()">New Game</button>
+    <div class="icon-body text-8xl">
+        <i class="fa-solid fa-hand-fist m-8 p-6 w-36 rounded-full border-2 hover:text-white hover:ring-2 hover:ring-cyan-300 hover:bg-slate-700" onclick="let computerC=generateComputerChoice();
+        display('Stone',computerC);"></i>
+        
+        <i class="fa-solid fa-hand m-8 p-6 rounded-full border-2 hover:text-white hover:ring-2 hover:ring-cyan-300 hover:bg-slate-700" onclick=" let computerCh=generateComputerChoice();
+        display('Paper',computerCh);"></i>
+
+        <i class="fa-solid fa-hand-scissors m-8 p-6 rounded-full border-2 hover:text-white hover:ring-2 hover:ring-cyan-300 hover:bg-slate-700"  onclick="let computerChoice=generateComputerChoice();
+        display('Scissor',computerChoice); "></i>
+    </div>
+    <div class=" h-1/6 pt-4 pb-4 font-bold text-white"><p id="msg" ></p></div>
+    <p id="display-score" class="h-16 pt-4 text-2xl text-white">Your Score will display here.</p>
+    
+
+    <Script src="script.js"></Script>
+</body>
+</html>
