@@ -107,6 +107,7 @@ function display(choiceU,choiceC){
 function scoreClear(){
     localStorage.clear();
     displayScore();
+    document.querySelector('#msg').innerText=`Select any of the button to play`;
 
 }
 
